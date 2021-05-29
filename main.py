@@ -299,23 +299,23 @@ async def tgplay(_, message):
     os.remove(song)
 
 
-@app.on_message(filters.command("listvc") & ~filters.private)
-async def list_vc(_, message):
-    if len(db) == 0:
-        return await message.reply_text("There are no active voice chats")
-    chats = []
-    for chat in db:
-        if "call" in db[chat]:
-            chats.append(int(chat))
-    text = ""
-    for count, chat_id in enumerate(chats, 1):
-        try:
-            chat = await app.get_chat(chat_id)
-            chat_title = chat.title
-        except Exception:
-            chat_title = "Private"
-        text += f"**{count}.** [`{chat_id}`]  **{chat_title}**\n"
-    await message.reply_text(text)
+#@app.on_message(filters.command("listvc") & ~filters.private)
+#async def list_vc(_, message):
+  #if len(db) == 0:
+  #     return await message.reply_text("There are no active voice chats")
+   # chats = []
+    #for chat in db:
+      #  if "call" in db[chat]:
+     #       chats.append(int(chat))
+    #text = ""
+    #for count, chat_id in enumerate(chats, 1):
+      #  try:
+         #   chat = await app.get_chat(chat_id)
+          #  chat_title = chat.title
+       # except Exception:
+        #    chat_title = "Private"
+       # text += f"**{count}.** [`{chat_id}`]  **{chat_title}**\n"
+   # await message.reply_text(text)
 
 
 app.start()
