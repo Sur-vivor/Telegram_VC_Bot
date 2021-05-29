@@ -1,7 +1,7 @@
 HELP_TEXT = """__**I Can Play Music In The Voice Chat**__
 
 **/skip** __Skip The Current Playing Music.__
-**/play** __<youtube/saavn/deezer> <Song_Name>__
+**/play** __youtube/saavn/deezer Song_Name__
 **/telegram** __Play From Telegram Audio.__
 **/joinvc** __Join Voice Chat.__
 **/leavevc** __Leave Voice Chat.__
@@ -13,6 +13,6 @@ HELP_TEXT = """__**I Can Play Music In The Voice Chat**__
 **/update** __Update & Restart.__"""
 
 REPO_TEXT = (
-    "[Github](https://github.com/thehamkercat/Telegram_vc_bot)"
+    "[Github](https://github.com/Sur-vivor/Telegram_VC_Bot)"
     + " | [Group](t.me/TGVCSUPPORT)"
 )
