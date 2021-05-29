@@ -1,7 +1,7 @@
 HELP_TEXT = """__**I Can Play Music In The Voice Chat**__
 
 **/skip** __Skip The Current Playing Music.__
-**/play** __youtube/saavn/deezer Song_Name__
+**/play** __<youtube/saavn/deezer> <Song_Name>__
 **/telegram** __Play From Telegram Audio.__
 **/joinvc** __Join Voice Chat.__
 **/leavevc** __Leave Voice Chat.__
